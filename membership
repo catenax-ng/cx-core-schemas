@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "MembershipCredential": {
+      "@id": "https://raw.githubusercontent.com/catenax-ng/cx-core-schemas/main/membership#MembershipCredential",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+         "ex": "https://example.org/examples#",
+
+        "startTime": {"@id": "https://schema.org/startTime", "@type":"https://schema.org/DateTime"},
+        "memberOf": {"@id": "https://schema.org/memberOf", "@type":"https://schema.org/Text"},
+        "status": {"@id": "ex:status", "@type":"https://schema.org/Text"}
+      }
+    }
+  }
+}
