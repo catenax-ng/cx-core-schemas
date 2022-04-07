@@ -74,6 +74,38 @@
           "@type": "https://schema.org/object"
         }
       }
+    },
+   "BankAccountCredential": {
+      "@id": "https://raw.githubusercontent.com/catenax-ng/cx-core-schemas/main/businessPartnerData#BankAccountCredential",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "uuid": "http://schema.org/identifier",
+        "trustScores": {
+          "@id": "ex:trustScores"
+        },
+        "nationalBankIdentifier": {
+          "@id": "ex:nationalBankIdentifier",
+          "@type": "https://schema.org/Text"
+        },
+        "nationalBankAccountIdentifier": {
+          "@id": "ex:nationalBankAccountIdentifier",
+          "@type": "https://schema.org/Text"
+        },
+        "internationalBankIdentifier": {
+          "@id": "ex:internationalBankIdentifier",
+          "@type": "https://schema.org/Text"
+        },
+        "internationalBankAccountIdentifier": {
+          "@id": "ex:internationalBankAccountIdentifier",
+          "@type": "https://schema.org/Text"
+        },
+        "currency": {
+          "@id": "ex:typeOf",
+          "@type": "https://schema.org/object"
+        }
+      }
     }
   }
 }
