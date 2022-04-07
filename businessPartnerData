@@ -65,8 +65,8 @@
           "@id": "ex:direction",
           "@type": "https://schema.org/Text"
         },
-        "typeOf": {
-          "@id": "ex:typeOf",
+        "nameType": {
+          "@id": "ex:nameType",
           "@type": "https://schema.org/object"
         },
         "language": {
