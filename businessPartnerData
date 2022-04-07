@@ -106,6 +106,55 @@
           "@type": "https://schema.org/object"
         }
       }
+    },
+    "AddressCredential": {
+      "@id": "https://raw.githubusercontent.com/catenax-ng/cx-core-schemas/main/businessPartnerData#AddressCredential",
+      "@context": {
+        "@version": 1.1,
+        "id": "@id",
+        "type": "@type",
+        "uuid": "http://schema.org/identifier",
+        "version": {
+          "@id": "ex:typeOf",
+          "@type": "https://schema.org/object"
+        },
+        "careOf": {
+          "@id": "ex:careOf",
+          "@type": "https://schema.org/Text"
+        },
+        "contexts": {
+          "@id": "ex:contexts"
+        },
+        "country": {
+          "@id": "ex:country",
+          "@type": "https://schema.org/object"
+        },
+        "administrativeAreas": {
+          "@id": "ex:administrativeAreas"
+        },
+        "postCodes": {
+          "@id": "ex:postCodes"
+        },
+        "localities": {
+          "@id": "ex:localities"
+        },
+        "thoroughfares": {
+          "@id": "ex:thoroughfares"
+        },
+        "premises": {
+          "@id": "ex:premises"
+        },
+        "postalDeliveryPoints": {
+          "@id": "ex:postalDeliveryPoints"
+        },
+        "geographicCoordinates": {
+          "@id": "ex:geographicCoordinates",
+          "@type": "https://schema.org/object"
+        },
+        "types": {
+          "@id": "ex:types"
+        }
+      }
     }
   }
 }
