@@ -128,6 +128,60 @@
           }
         }
       }
+    },
+    "LegalFormCredential": {
+      "@id": "ctx:LegalFormCredential",
+      "@context": {
+        "data": {
+          "@id": "ctx:data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@type": "https://schema.org/Text"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@type": "https://schema.org/Text"
+            },
+            "url": {
+              "@id": "ctx:url",
+              "@type": "https://schema.org/Text"
+            },
+            "mainAbbreviation": {
+              "@id": "ctx:mainAbbreviation",
+              "@type": "https://schema.org/Text"
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@type": "https://schema.org/object",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@type": "https://schema.org/Text"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@type": "https://schema.org/Text"
+                }
+              }
+            },
+            "categories": {
+              "@id": "ctx:categories",
+              "@type": "https://schema.org/ItemList",
+              "@context": {
+                "name": {
+                  "@id": "ctx:name",
+                  "@type": "https://schema.org/Text"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@type": "https://schema.org/Text"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
