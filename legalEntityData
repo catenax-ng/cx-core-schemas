@@ -41,7 +41,7 @@
         "id": "@id",
         "type": "@type",
         "data": {
-          "@id": "ex:data",
+          "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/main/businessPartnerData#MembershipCredential",
           "@type": "https://schema.org/object"
         }
       }
