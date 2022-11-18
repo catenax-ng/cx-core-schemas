@@ -35,7 +35,7 @@
       }
     },
     "NameCredential": {
-      "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/edit/main/legalEntityData#NameCredential",
+      "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/main/legalEntityData#NameCredential",
       "@context": {
         "@version": 1.1,
         "id": "@id",
