@@ -40,41 +40,8 @@
         "@version": 1.1,
         "id": "@id",
         "type": "@type",
-        "uuid": "http://schema.org/identifier",
         "data": {
           "@id": "ex:data",
-          "@type": "https://schema.org/object"
-        },
-        "value": {
-          "@id": "ex:value",
-          "@type": "https://schema.org/Text"
-        },
-        "name": {
-          "@id": "ex:name",
-          "@type": "https://schema.org/Text"
-        },
-        "shortName": {
-          "@id": "ex:shortName",
-          "@type": "https://schema.org/Text"
-        },
-        "fipsCode": {
-          "@id": "ex:fipsCode",
-          "@type": "https://schema.org/Text"
-        },
-        "number": {
-          "@id": "ex:number",
-          "@type": "https://schema.org/Text"
-        },
-        "direction": {
-          "@id": "ex:direction",
-          "@type": "https://schema.org/Text"
-        },
-        "nameType": {
-          "@id": "ex:nameType",
-          "@type": "https://schema.org/object"
-        },
-        "language": {
-          "@id": "ex:language",
           "@type": "https://schema.org/object"
         }
       }
