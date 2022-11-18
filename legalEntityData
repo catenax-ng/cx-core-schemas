@@ -182,6 +182,104 @@
           }
         }
       }
+    },
+    "AddressCredential": {
+      "@id": "ctx:AddressCredential",
+      "@context": {
+        "data": {
+          "@id": "ctx:data",
+          "@context": {
+            "version": {
+              "@id": "ctx:version",
+              "@type": "https://schema.org/object",
+              "@context": {
+                "characterSet": {
+                  "@id": "ctx:characterSet",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
+            },
+            "careOf": {
+              "@id": "ctx:careOf",
+              "@type": "https://schema.org/Text"
+            },
+            "contexts": {
+              "@id": "ctx:contexts",
+              "@type": "https://schema.org/ItemList"
+            },
+            "country": {
+              "@id": "ctx:country",
+              "@type": "https://schema.org/ItemList",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@type": "https://schema.org/Text"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@type": "https://schema.org/Text"
+                }
+              }
+            },
+            "administrativeAreas": {
+              "@id": "ex:administrativeAreas",
+              "@type": "https://schema.org/object"
+            },
+            "postCodes": {
+              "@id": "ex:postCodes",
+              "@type": "https://schema.org/object"
+            },
+            "localities": {
+              "@id": "ex:localities",
+              "@type": "https://schema.org/object"
+            },
+            "thoroughfares": {
+              "@id": "ex:thoroughfares",
+              "@type": "https://schema.org/object"
+            },
+            "premises": {
+              "@id": "ex:premises",
+              "@type": "https://schema.org/object"
+            },
+            "postalDeliveryPoints": {
+              "@id": "ex:postalDeliveryPoints",
+              "@type": "https://schema.org/object"
+            },
+            "geographicCoordinates": {
+              "@id": "ex:geographicCoordinates",
+              "@type": "https://schema.org/object"
+            },
+            "types": {
+              "@id": "ex:types",
+              "@type": "https://schema.org/object"
+            }
+          }
+        }
+      }
     }
   }
 }
