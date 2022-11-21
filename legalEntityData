@@ -40,6 +40,7 @@
       "@context": {
         "data": {
           "@id": "ctx:data",
+          "@type": "@id",
           "@context": {
             "value": {
               "@id": "ctx:value",
@@ -51,7 +52,7 @@
             },
             "nameType": {
               "@id": "ctx:nameType",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
@@ -69,7 +70,7 @@
             },
             "language": {
               "@id": "ctx:language",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
@@ -90,10 +91,11 @@
       "@context": {
         "data": {
           "@id": "ctx:data",
+          "@type": "@id",
           "@context": {
             "trustScores": {
               "@id": "ctx:trustScores",
-              "@type": "https://schema.org/ItemList"
+              "@container": "@list"
             },
             "internationalBankAccountIdentifier": {
               "@id": "ctx:internationalBankAccountIdentifier",
