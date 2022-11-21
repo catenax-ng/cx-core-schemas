@@ -2,8 +2,9 @@
   "@context": {
     "@version": 1.1,
     "@protected": true,
+    "ctx": "https://catena-x.net/selfdescription#",
     "BpnCredential": {
-      "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/main/businessPartnerData#BpnCredential",
+      "@id": "ctx:BpnCredential",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -13,7 +14,7 @@
       }
     },
     "MembershipCredential": {
-      "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/main/businessPartnerData#MembershipCredential",
+      "@id": "ctx:MembershipCredential",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -21,11 +22,11 @@
         "type": "@type",
         "ex": "https://example.org/examples#",
         "startTime": {
-          "@id": "https://schema.org/startTime",
+          "@id": "ctx:startTime",
           "@type": "https://schema.org/DateTime"
         },
         "memberOf": {
-          "@id": "https://schema.org/memberOf",
+          "@id": "ctx:memberOf",
           "@type": "https://schema.org/Text"
         },
         "status": {
@@ -34,7 +35,6 @@
         }
       }
     },
-    "ctx": "https://catena-x.net/selfdescription#",
     "NameCredential": {
       "@id": "ctx:NameCredential",
       "@context": {
@@ -247,35 +247,321 @@
             },
             "administrativeAreas": {
               "@id": "ex:administrativeAreas",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "shortName": {
+                  "@id": "ctx:shortName",
+                  "@type": "https://schema.org/Text"
+                },
+                "fipsCode": {
+                  "@id": "ctx:fipsCode",
+                  "@type": "https://schema.org/Text"
+                },
+                "administrativeAreaType": {
+                  "@id": "ctx:administrativeAreaType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "postCodes": {
               "@id": "ex:postCodes",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "postCodeType": {
+                  "@id": "ctx:postCodeType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "localities": {
               "@id": "ex:localities",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "shortName": {
+                  "@id": "ctx:shortName",
+                  "@type": "https://schema.org/Text"
+                },
+                "localitiesType": {
+                  "@id": "ctx:localitiesType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "thoroughfares": {
               "@id": "ex:thoroughfares",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@type": "https://schema.org/Text"
+                },
+                "shortName": {
+                  "@id": "ctx:shortName",
+                  "@type": "https://schema.org/Text"
+                },
+                "number": {
+                  "@id": "ctx:number",
+                  "@type": "https://schema.org/Text"
+                },
+                "direction": {
+                  "@id": "ctx:number",
+                  "@type": "https://schema.org/Text"
+                },
+                "thoroughfareType": {
+                  "@id": "ctx:thoroughfareType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "premises": {
               "@id": "ex:premises",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "shortName": {
+                  "@id": "ctx:shortName",
+                  "@type": "https://schema.org/Text"
+                },
+                "number": {
+                  "@id": "ctx:number",
+                  "@type": "https://schema.org/Text"
+                },
+                "premiseType": {
+                  "@id": "ctx:premiseType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "postalDeliveryPoints": {
               "@id": "ex:postalDeliveryPoints",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "value": {
+                  "@id": "ctx:value",
+                  "@type": "https://schema.org/Text"
+                },
+                "shortName": {
+                  "@id": "ctx:shortName",
+                  "@type": "https://schema.org/Text"
+                },
+                "number": {
+                  "@id": "ctx:number",
+                  "@type": "https://schema.org/Text"
+                },
+                "postalDeliveryPointType": {
+                  "@id": "ctx:postalDeliveryPointType",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "url": {
+                      "@id": "ctx:url",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                },
+                "language": {
+                  "@id": "ctx:language",
+                  "@type": "https://schema.org/object",
+                  "@context": {
+                    "technicalKey": {
+                      "@id": "ctx:technicalKey",
+                      "@type": "https://schema.org/Text"
+                    },
+                    "name": {
+                      "@id": "ctx:name",
+                      "@type": "https://schema.org/Text"
+                    }
+                  }
+                }
+              }
             },
             "geographicCoordinates": {
               "@id": "ex:geographicCoordinates",
-              "@type": "https://schema.org/object"
+              "@type": "https://schema.org/object",
+              "@context": {
+                "longitude": {
+                  "@id": "ctx:longitude",
+                  "@type": "https://schema.org/Text"
+                },
+                "latitude": {
+                  "@id": "ctx:latitude",
+                  "@type": "https://schema.org/Text"
+                },
+                "altitude": {
+                  "@id": "ctx:altitude",
+                  "@type": "https://schema.org/Text"
+                }
+              }
             },
             "types": {
-              "@id": "ex:types",
-              "@type": "https://schema.org/object"
+              "@id": "ctx:types",
+              "@type": "https://schema.org/object",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@type": "https://schema.org/Text"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@type": "https://schema.org/Text"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@type": "https://schema.org/Text"
+                }
+              }
             }
           }
         }
