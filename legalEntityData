@@ -40,7 +40,6 @@
       "@context": {
         "data": {
           "@id": "ctx:data",
-          "@type": "@id",
           "@context": {
             "value": {
               "@id": "ctx:value",
@@ -56,15 +55,15 @@
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "url": {
                   "@id": "ctx:url",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             },
@@ -74,11 +73,11 @@
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             }
