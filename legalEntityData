@@ -56,15 +56,15 @@
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "@id"
+                  "@type": "https://schema.org/Text"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "@id"
+                  "@type": "https://schema.org/Text"
                 },
                 "url": {
                   "@id": "ctx:url",
-                  "@type": "@id"
+                  "@type": "https://schema.org/Text"
                 }
               }
             },
@@ -74,11 +74,11 @@
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "@id"
+                  "@type": "https://schema.org/Text"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "@id"
+                  "@type": "https://schema.org/Text"
                 }
               }
             }
