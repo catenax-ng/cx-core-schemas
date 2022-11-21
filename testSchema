@@ -1,0 +1,53 @@
+{
+  "@context": [
+    {
+      "@version": 1.1
+    },
+    "https://www.w3.org/ns/odrl.jsonld",
+    {
+      "ex": "https://example.org/examples#",
+      "schema": "http://schema.org/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "NameCredential": "ex:NameCredential",
+      "data": {
+        "@id": "ex:data",
+        "@context": [
+          {
+            "@version": 1.1
+          },
+          "https://www.w3.org/ns/odrl.jsonld",
+          {
+            "value": "ex:value",
+            "language": {
+              "@id": "ex:language",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ex:technicalKey",
+                  "name": "ex:name"
+                }
+              ]
+            },
+            "nameType": {
+              "@id": "ex:nameType",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ex:technicalKey",
+                  "name": "ex:name",
+                  "url": "ex:url"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
