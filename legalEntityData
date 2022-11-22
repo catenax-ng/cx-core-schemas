@@ -250,6 +250,7 @@
             "administrativeAreas": {
               "@id": "ex:administrativeAreas",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -300,6 +301,7 @@
             "postCodes": {
               "@id": "ex:postCodes",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -328,6 +330,7 @@
             "localities": {
               "@id": "ex:localities",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -374,6 +377,7 @@
             "thoroughfares": {
               "@id": "ex:thoroughfares",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -432,6 +436,7 @@
             "premises": {
               "@id": "ex:premises",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -482,6 +487,7 @@
             "postalDeliveryPoints": {
               "@id": "ex:postalDeliveryPoints",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
@@ -550,6 +556,7 @@
             "types": {
               "@id": "ctx:types",
               "@type": "@id",
+              "@container": "@list",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
