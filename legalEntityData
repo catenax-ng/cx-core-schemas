@@ -27,11 +27,11 @@
         },
         "memberOf": {
           "@id": "ctx:memberOf",
-          "@type": "https://schema.org/Text"
+          "@type": "@id"
         },
         "status": {
           "@id": "ex:status",
-          "@type": "https://schema.org/Text"
+          "@type": "@id"
         }
       }
     },
@@ -98,31 +98,31 @@
             },
             "internationalBankAccountIdentifier": {
               "@id": "ctx:internationalBankAccountIdentifier",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "internationalBankIdentifier": {
               "@id": "ctx:internationalBankIdentifier",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "nationalBankAccountIdentifier": {
               "@id": "ctx:nationalBankAccountIdentifier",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "nationalBankIdentifier": {
               "@id": "ctx:nationalBankIdentifier",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "currency": {
               "@id": "ctx:currency",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             }
@@ -138,31 +138,31 @@
           "@context": {
             "technicalKey": {
               "@id": "ctx:technicalKey",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "name": {
               "@id": "ctx:name",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "url": {
               "@id": "ctx:url",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "mainAbbreviation": {
               "@id": "ctx:mainAbbreviation",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "language": {
               "@id": "ctx:language",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             },
@@ -172,11 +172,11 @@
               "@context": {
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "url": {
                   "@id": "ctx:url",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             }
@@ -192,33 +192,33 @@
           "@context": {
             "version": {
               "@id": "ctx:version",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "characterSet": {
                   "@id": "ctx:characterSet",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -226,71 +226,72 @@
             },
             "careOf": {
               "@id": "ctx:careOf",
-              "@type": "https://schema.org/Text"
+              "@type": "@id"
             },
             "contexts": {
               "@id": "ctx:contexts",
-              "@type": "https://schema.org/ItemList"
+              "@type": "@id",
+              "@container": "@list"
             },
             "country": {
               "@id": "ctx:country",
-              "@type": "https://schema.org/ItemList",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             },
             "administrativeAreas": {
               "@id": "ex:administrativeAreas",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "shortName": {
                   "@id": "ctx:shortName",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "fipsCode": {
                   "@id": "ctx:fipsCode",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "administrativeAreaType": {
                   "@id": "ctx:administrativeAreaType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -298,27 +299,27 @@
             },
             "postCodes": {
               "@id": "ex:postCodes",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "postCodeType": {
                   "@id": "ctx:postCodeType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -326,45 +327,45 @@
             },
             "localities": {
               "@id": "ex:localities",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "shortName": {
                   "@id": "ctx:shortName",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "localitiesType": {
                   "@id": "ctx:localitiesType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -372,57 +373,57 @@
             },
             "thoroughfares": {
               "@id": "ex:thoroughfares",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "shortName": {
                   "@id": "ctx:shortName",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "number": {
                   "@id": "ctx:number",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "direction": {
                   "@id": "ctx:number",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "thoroughfareType": {
                   "@id": "ctx:thoroughfareType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -430,49 +431,49 @@
             },
             "premises": {
               "@id": "ex:premises",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "shortName": {
                   "@id": "ctx:shortName",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "number": {
                   "@id": "ctx:number",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "premiseType": {
                   "@id": "ctx:premiseType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -480,49 +481,49 @@
             },
             "postalDeliveryPoints": {
               "@id": "ex:postalDeliveryPoints",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "value": {
                   "@id": "ctx:value",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "shortName": {
                   "@id": "ctx:shortName",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "number": {
                   "@id": "ctx:number",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "postalDeliveryPointType": {
                   "@id": "ctx:postalDeliveryPointType",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "url": {
                       "@id": "ctx:url",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 },
                 "language": {
                   "@id": "ctx:language",
-                  "@type": "https://schema.org/object",
+                  "@type": "@id",
                   "@context": {
                     "technicalKey": {
                       "@id": "ctx:technicalKey",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     },
                     "name": {
                       "@id": "ctx:name",
-                      "@type": "https://schema.org/Text"
+                      "@type": "@id"
                     }
                   }
                 }
@@ -530,37 +531,37 @@
             },
             "geographicCoordinates": {
               "@id": "ex:geographicCoordinates",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "longitude": {
                   "@id": "ctx:longitude",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "latitude": {
                   "@id": "ctx:latitude",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "altitude": {
                   "@id": "ctx:altitude",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             },
             "types": {
               "@id": "ctx:types",
-              "@type": "https://schema.org/object",
+              "@type": "@id",
               "@context": {
                 "technicalKey": {
                   "@id": "ctx:technicalKey",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "name": {
                   "@id": "ctx:name",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 },
                 "url": {
                   "@id": "ctx:url",
-                  "@type": "https://schema.org/Text"
+                  "@type": "@id"
                 }
               }
             }
