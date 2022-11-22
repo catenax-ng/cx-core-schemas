@@ -340,8 +340,8 @@
                   "@id": "ctx:shortName",
                   "@type": "@id"
                 },
-                "localitiesType": {
-                  "@id": "ctx:localitiesType",
+                "localityType": {
+                  "@id": "ctx:localityType",
                   "@type": "@id",
                   "@context": {
                     "technicalKey": {
@@ -396,7 +396,7 @@
                   "@type": "@id"
                 },
                 "direction": {
-                  "@id": "ctx:number",
+                  "@id": "ctx:direction",
                   "@type": "@id"
                 },
                 "thoroughfareType": {
