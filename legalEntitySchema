@@ -1,0 +1,566 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "ctx": "https://catena-x.net/selfdescription#",
+    "BpnCredential": {
+      "@id": "ctx:BpnCredential",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "bpn": "http://schema.org/identifier"
+      }
+    },
+    "MembershipCredential": {
+      "@id": "ctx:MembershipCredential",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "id": "@id",
+        "type": "@type",
+        "ex": "https://example.org/examples#",
+        "startTime": {
+          "@id": "ctx:startTime",
+          "@type": "https://schema.org/DateTime"
+        },
+        "memberOf": {
+          "@id": "ctx:memberOf",
+          "@type": "@id"
+        },
+        "status": {
+          "@id": "ex:status",
+          "@type": "@id"
+        }
+      }
+    },
+    "NameCredential": {
+      "@id": "ctx:NameCredential",
+      "@context": {
+        "data": "@nest",
+        "value": {
+          "@id": "ctx:value",
+          "@nest": "data"
+        },
+        "shortName": {
+          "@id": "ctx:shortName",
+          "@nest": "data"
+        },
+        "nameType": {
+          "@id": "ctx:nameType",
+          "@nest": "data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "nameType"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "nameType"
+            },
+            "url": {
+              "@id": "ctx:url",
+              "@nest": "nameType"
+            }
+          }
+        },
+        "language": {
+          "@id": "ctx:language",
+          "@nest": "data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "language"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "language"
+            }
+          }
+        }
+      }
+    },
+    "BankAccountCredential": {
+      "@id": "ctx:BankAccountCredential",
+      "@context": {
+        "data": "@nest",
+        "trustScores": {
+          "@id": "ctx:trustScores",
+          "@container": "@list",
+          "@nest": "data"
+        },
+        "internationalBankAccountIdentifier": {
+          "@id": "ctx:internationalBankAccountIdentifier",
+          "@nest": "data"
+        },
+        "internationalBankIdentifier": {
+          "@id": "ctx:internationalBankIdentifier",
+          "@nest": "data"
+        },
+        "nationalBankAccountIdentifier": {
+          "@id": "ctx:nationalBankAccountIdentifier",
+          "@nest": "data"
+        },
+        "nationalBankIdentifier": {
+          "@id": "ctx:nationalBankIdentifier",
+          "@nest": "data"
+        },
+        "currency": {
+          "@id": "ctx:currency",
+          "@nest": "data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "currency"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "currency"
+            }
+          }
+        }
+      }
+    },
+    "LegalFormCredential": {
+      "@id": "ctx:LegalFormCredential",
+      "@context": {
+        "data": "@nest",
+        "technicalKey": {
+          "@id": "ctx:technicalKey",
+          "@nest": "data"
+        },
+        "name": {
+          "@id": "ctx:name",
+          "@nest": "data"
+        },
+        "url": {
+          "@id": "ctx:url",
+          "@nest": "data"
+        },
+        "mainAbbreviation": {
+          "@id": "ctx:mainAbbreviation",
+          "@nest": "data"
+        },
+        "language": {
+          "@id": "ctx:language",
+          "@nest": "data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "language"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "language"
+            }
+          }
+        },
+        "categories": {
+          "@id": "ctx:categories",
+          "@type": "https://schema.org/ItemList",
+          "@nest": "data",
+          "@context": {
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "categories"
+            },
+            "url": {
+              "@id": "ctx:url",
+              "@nest": "categories"
+            }
+          }
+        }
+      }
+    },
+    "AddressCredential": {
+      "@id": "ctx:AddressCredential",
+      "@context": {
+        "data": "@nest",
+        "version": {
+          "@id": "ctx:version",
+          "@type": "@id",
+          "@nest": "data",
+          "@context": {
+            "characterSet": {
+              "@id": "ctx:characterSet",
+              "@nest": "version",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "characterSet"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "characterSet"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@nest": "version",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "language"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "language"
+                }
+              }
+            }
+          }
+        },
+        "careOf": {
+          "@id": "ctx:careOf",
+          "@nest": "data"
+        },
+        "contexts": {
+          "@id": "ctx:contexts",
+          "@nest": "data",
+          "@container": "@list"
+        },
+        "country": {
+          "@id": "ctx:country",
+          "@nest": "data",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "country"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "country"
+            }
+          }
+        },
+        "administrativeAreas": {
+          "@id": "ex:administrativeAreas",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "administrativeAreas"
+            },
+            "shortName": {
+              "@id": "ctx:shortName",
+              "@nest": "administrativeAreas"
+            },
+            "fipsCode": {
+              "@id": "ctx:fipsCode",
+              "@nest": "administrativeAreas"
+            },
+            "administrativeAreaType": {
+              "@id": "ctx:administrativeAreaType",
+              "@nest": "administrativeAreas",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "administrativeAreaType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "administrativeAreaType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "administrativeAreaType"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@nest": "administrativeAreas",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "language"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "language"
+                }
+              }
+            }
+          }
+        },
+        "postCodes": {
+          "@id": "ex:postCodes",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "postCodes"
+            },
+            "postCodeType": {
+              "@id": "ctx:postCodeType",
+              "@nest": "postCodes",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "postCodeType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "postCodeType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "postCodeType"
+                }
+              }
+            }
+          }
+        },
+        "localities": {
+          "@id": "ex:localities",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "localities"
+            },
+            "shortName": {
+              "@id": "ctx:shortName",
+              "@nest": "localities"
+            },
+            "localityType": {
+              "@id": "ctx:localityType",
+              "@nest": "localities",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "localityType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "localityType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "localityType"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@type": "@id",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "localities"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "localities"
+                }
+              }
+            }
+          }
+        },
+        "thoroughfares": {
+          "@id": "ex:thoroughfares",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "thoroughfares"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "thoroughfares"
+            },
+            "shortName": {
+              "@id": "ctx:shortName",
+              "@nest": "thoroughfares"
+            },
+            "number": {
+              "@id": "ctx:number",
+              "@nest": "thoroughfares"
+            },
+            "direction": {
+              "@id": "ctx:direction",
+              "@nest": "thoroughfares"
+            },
+            "thoroughfareType": {
+              "@id": "ctx:thoroughfareType",
+              "@nest": "thoroughfares",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "thoroughfareType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "thoroughfareType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "thoroughfareType"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@nest": "thoroughfares",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "language"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "language"
+                }
+              }
+            }
+          }
+        },
+        "premises": {
+          "@id": "ex:premises",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "premises"
+            },
+            "shortName": {
+              "@id": "ctx:shortName",
+              "@nest": "premises"
+            },
+            "number": {
+              "@id": "ctx:number",
+              "@nest": "premises"
+            },
+            "premiseType": {
+              "@id": "ctx:premiseType",
+              "@nest": "premises",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "premiseType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "premiseType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "premiseType"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@nest": "premises",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "premises"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "premises"
+                }
+              }
+            }
+          }
+        },
+        "postalDeliveryPoints": {
+          "@id": "ex:postalDeliveryPoints",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "value": {
+              "@id": "ctx:value",
+              "@nest": "postalDeliveryPoints"
+            },
+            "shortName": {
+              "@id": "ctx:shortName",
+              "@nest": "postalDeliveryPoints"
+            },
+            "number": {
+              "@id": "ctx:number",
+              "@nest": "postalDeliveryPoints"
+            },
+            "postalDeliveryPointType": {
+              "@id": "ctx:postalDeliveryPointType",
+              "@nest": "postalDeliveryPoints",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "postalDeliveryPointType"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "postalDeliveryPointType"
+                },
+                "url": {
+                  "@id": "ctx:url",
+                  "@nest": "postalDeliveryPointType"
+                }
+              }
+            },
+            "language": {
+              "@id": "ctx:language",
+              "@nest": "postalDeliveryPoints",
+              "@context": {
+                "technicalKey": {
+                  "@id": "ctx:technicalKey",
+                  "@nest": "postalDeliveryPoints"
+                },
+                "name": {
+                  "@id": "ctx:name",
+                  "@nest": "postalDeliveryPoints"
+                }
+              }
+            }
+          }
+        },
+        "geographicCoordinates": {
+          "@id": "ex:geographicCoordinates",
+          "@nest": "data",
+          "@context": {
+            "longitude": {
+              "@id": "ctx:longitude",
+              "@nest": "geographicCoordinates"
+            },
+            "latitude": {
+              "@id": "ctx:latitude",
+              "@nest": "geographicCoordinates"
+            },
+            "altitude": {
+              "@id": "ctx:altitude",
+              "@nest": "geographicCoordinates"
+            }
+          }
+        },
+        "types": {
+          "@id": "ctx:types",
+          "@nest": "data",
+          "@container": "@list",
+          "@context": {
+            "technicalKey": {
+              "@id": "ctx:technicalKey",
+              "@nest": "types"
+            },
+            "name": {
+              "@id": "ctx:name",
+              "@nest": "types"
+            },
+            "url": {
+              "@id": "ctx:url",
+              "@nest": "types"
+            }
+          }
+        }
+      }
+    }
+  }
+}
