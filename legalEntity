@@ -52,16 +52,13 @@
           "@nest": "data",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "nameType"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "nameType"
+              "@id": "ctx:name"
             },
             "url": {
-              "@id": "ctx:url",
-              "@nest": "nameType"
+              "@id": "ctx:url"
             }
           }
         },
@@ -70,12 +67,10 @@
           "@nest": "data",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "language"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "language"
+              "@id": "ctx:name"
             }
           }
         }
@@ -111,12 +106,10 @@
           "@nest": "data",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "currency"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "currency"
+              "@id": "ctx:name"
             }
           }
         }
@@ -147,12 +140,10 @@
           "@nest": "data",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "language"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "language"
+              "@id": "ctx:name"
             }
           }
         },
@@ -162,12 +153,10 @@
           "@nest": "data",
           "@context": {
             "name": {
-              "@id": "ctx:name",
-              "@nest": "categories"
+              "@id": "ctx:name"
             },
             "url": {
-              "@id": "ctx:url",
-              "@nest": "categories"
+              "@id": "ctx:url"
             }
           }
         }
@@ -184,29 +173,23 @@
           "@context": {
             "characterSet": {
               "@id": "ctx:characterSet",
-              "@nest": "version",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "characterSet"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "characterSet"
+                  "@id": "ctx:name"
                 }
               }
             },
             "language": {
               "@id": "ctx:language",
-              "@nest": "version",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "language"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "language"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -226,12 +209,10 @@
           "@nest": "data",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "country"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "country"
+              "@id": "ctx:name"
             }
           }
         },
@@ -241,46 +222,36 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "administrativeAreas"
+              "@id": "ctx:value"
             },
             "shortName": {
-              "@id": "ctx:shortName",
-              "@nest": "administrativeAreas"
+              "@id": "ctx:shortName"
             },
             "fipsCode": {
-              "@id": "ctx:fipsCode",
-              "@nest": "administrativeAreas"
+              "@id": "ctx:fipsCode"
             },
             "administrativeAreaType": {
               "@id": "ctx:administrativeAreaType",
-              "@nest": "administrativeAreas",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "administrativeAreaType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "administrativeAreaType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "administrativeAreaType"
+                  "@id": "ctx:url"
                 }
               }
             },
             "language": {
               "@id": "ctx:language",
-              "@nest": "administrativeAreas",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "language"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "language"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -292,24 +263,19 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "postCodes"
+              "@id": "ctx:value"
             },
             "postCodeType": {
               "@id": "ctx:postCodeType",
-              "@nest": "postCodes",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "postCodeType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "postCodeType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "postCodeType"
+                  "@id": "ctx:url"
                 }
               }
             }
@@ -321,28 +287,22 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "localities"
+              "@id": "ctx:value"
             },
             "shortName": {
-              "@id": "ctx:shortName",
-              "@nest": "localities"
+              "@id": "ctx:shortName"
             },
             "localityType": {
               "@id": "ctx:localityType",
-              "@nest": "localities",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "localityType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "localityType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "localityType"
+                  "@id": "ctx:url"
                 }
               }
             },
@@ -351,12 +311,10 @@
               "@type": "@id",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "localities"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "localities"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -368,54 +326,42 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "thoroughfares"
+              "@id": "ctx:value"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "thoroughfares"
+              "@id": "ctx:name"
             },
             "shortName": {
-              "@id": "ctx:shortName",
-              "@nest": "thoroughfares"
+              "@id": "ctx:shortName"
             },
             "number": {
-              "@id": "ctx:number",
-              "@nest": "thoroughfares"
+              "@id": "ctx:number"
             },
             "direction": {
-              "@id": "ctx:direction",
-              "@nest": "thoroughfares"
+              "@id": "ctx:direction"
             },
             "thoroughfareType": {
               "@id": "ctx:thoroughfareType",
-              "@nest": "thoroughfares",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "thoroughfareType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "thoroughfareType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "thoroughfareType"
+                  "@id": "ctx:url"
                 }
               }
             },
             "language": {
               "@id": "ctx:language",
-              "@nest": "thoroughfares",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "language"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "language"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -427,46 +373,36 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "premises"
+              "@id": "ctx:value"
             },
             "shortName": {
-              "@id": "ctx:shortName",
-              "@nest": "premises"
+              "@id": "ctx:shortName"
             },
             "number": {
-              "@id": "ctx:number",
-              "@nest": "premises"
+              "@id": "ctx:number"
             },
             "premiseType": {
               "@id": "ctx:premiseType",
-              "@nest": "premises",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "premiseType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "premiseType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "premiseType"
+                  "@id": "ctx:url"
                 }
               }
             },
             "language": {
               "@id": "ctx:language",
-              "@nest": "premises",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "premises"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "premises"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -478,46 +414,36 @@
           "@container": "@list",
           "@context": {
             "value": {
-              "@id": "ctx:value",
-              "@nest": "postalDeliveryPoints"
+              "@id": "ctx:value"
             },
             "shortName": {
-              "@id": "ctx:shortName",
-              "@nest": "postalDeliveryPoints"
+              "@id": "ctx:shortName"
             },
             "number": {
-              "@id": "ctx:number",
-              "@nest": "postalDeliveryPoints"
+              "@id": "ctx:number"
             },
             "postalDeliveryPointType": {
               "@id": "ctx:postalDeliveryPointType",
-              "@nest": "postalDeliveryPoints",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "postalDeliveryPointType"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "postalDeliveryPointType"
+                  "@id": "ctx:name"
                 },
                 "url": {
-                  "@id": "ctx:url",
-                  "@nest": "postalDeliveryPointType"
+                  "@id": "ctx:url"
                 }
               }
             },
             "language": {
               "@id": "ctx:language",
-              "@nest": "postalDeliveryPoints",
               "@context": {
                 "technicalKey": {
-                  "@id": "ctx:technicalKey",
-                  "@nest": "postalDeliveryPoints"
+                  "@id": "ctx:technicalKey"
                 },
                 "name": {
-                  "@id": "ctx:name",
-                  "@nest": "postalDeliveryPoints"
+                  "@id": "ctx:name"
                 }
               }
             }
@@ -528,16 +454,13 @@
           "@nest": "data",
           "@context": {
             "longitude": {
-              "@id": "ctx:longitude",
-              "@nest": "geographicCoordinates"
+              "@id": "ctx:longitude"
             },
             "latitude": {
-              "@id": "ctx:latitude",
-              "@nest": "geographicCoordinates"
+              "@id": "ctx:latitude"
             },
             "altitude": {
-              "@id": "ctx:altitude",
-              "@nest": "geographicCoordinates"
+              "@id": "ctx:altitude"
             }
           }
         },
@@ -547,16 +470,13 @@
           "@container": "@list",
           "@context": {
             "technicalKey": {
-              "@id": "ctx:technicalKey",
-              "@nest": "types"
+              "@id": "ctx:technicalKey"
             },
             "name": {
-              "@id": "ctx:name",
-              "@nest": "types"
+              "@id": "ctx:name"
             },
             "url": {
-              "@id": "ctx:url",
-              "@nest": "types"
+              "@id": "ctx:url"
             }
           }
         }
