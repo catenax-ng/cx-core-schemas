@@ -1,0 +1,400 @@
+{
+  "@context": [
+    {
+      "@version": 1.1
+    },
+    "https://www.w3.org/ns/odrl.jsonld",
+    {
+      "schema": "http://schema.org/",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "ctx": "https://catena-x.net/selfdescription#",
+      "BpnCredential": "ctx:BpnCredential",
+      "MembershipCredential": "ctx:MembershipCredential",
+      "NameCredential": "ctx:NameCredential",
+      "BankAccountCredential": "ctx:BankAccountCredential",
+      "LegalFormCredential": "ctx:LegalFormCredential",
+      "AddressCredential": "ctx:AddressCredential",
+      "bpn": "ctx:bpn",
+      "startTime": "ctx:startTime",
+      "memberOf": "ctx:memberOf",
+      "status": "ctx:status",
+      "data": {
+        "@id": "ctx:data",
+        "@context": [
+          {
+            "@version": 1.1
+          },
+          "https://www.w3.org/ns/odrl.jsonld",
+          {
+            "value": "ctx:value",
+            "shortName": "ctx:shortName",
+            "language": {
+              "@id": "ctx:language",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ctx:technicalKey",
+                  "name": "ctx:name"
+                }
+              ]
+            },
+            "nameType": {
+              "@id": "ctx:nameType",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ctx:technicalKey",
+                  "name": "ctx:name",
+                  "url": "ctx:url"
+                }
+              ]
+            },
+            "trustScores": "ctx:trustScores",
+            "internationalBankAccountIdentifier": "ctx:internationalBankAccountIdentifier",
+            "internationalBankIdentifier": "ctx:internationalBankIdentifier",
+            "nationalBankAccountIdentifier": "ctx:nationalBankAccountIdentifier",
+            "nationalBankIdentifier": "ctx:nationalBankIdentifier",
+            "currency": {
+              "@id": "ctx:currency",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ctx:technicalKey",
+                  "name": "ctx:name"
+                }
+              ]
+            },
+            "technicalKey": "ctx:technicalKey",
+            "name": "ctx:name",
+            "url": "ctx:url",
+            "mainAbbreviation": "ctx:mainAbbreviation",
+            "categories": {
+              "@id": "ctx:categories",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "name": "ctx:name",
+                  "url": "ctx:url"
+                }
+              ]
+            },
+            "version": {
+              "@id": "ctx:version",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "characterSet": {
+                    "@id": "ctx:characterSet",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  },
+                  "url": "ctx:url"
+                }
+              ]
+            },
+            "careOf": "ctx:careOf",
+            "contexts": "ctx:contexts",
+            "country": {
+              "@id": "ctx:country",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ctx:technicalKey",
+                  "name": "ctx:name"
+                }
+              ]
+            },
+            "administrativeAreas": {
+              "@id": "ctx:categories",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "shortName": "ctx:shortName",
+                  "fipsCode": "ctx:fipsCode",
+                  "administrativeAreaType": {
+                    "@id": "ctx:administrativeAreaType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "url"
+                      }
+                    ]
+                  },
+                  "language": {
+                    "@id": "ctx:language",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "postCodes": {
+              "@id": "ctx:postCodes",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "postCodeType": {
+                    "@id": "ctx:postCodeType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "ctx:url"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "localities": {
+              "@id": "ctx:localities",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "shortName": "ctx:shortName",
+                  "localitiesType": {
+                    "@id": "ctx:localitiesType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "url"
+                      }
+                    ]
+                  },
+                  "language": {
+                    "@id": "ctx:language",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "thoroughfares": {
+              "@id": "ctx:thoroughfares",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "shortName": "ctx:shortName",
+                  "name": "ctx:name",
+                  "number": "ctx:number",
+                  "direction": "ctx:direction",
+                  "thoroughfareType": {
+                    "@id": "ctx:thoroughfareType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "url"
+                      }
+                    ]
+                  },
+                  "language": {
+                    "@id": "ctx:language",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "premises": {
+              "@id": "ctx:premises",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "shortName": "ctx:shortName",
+                  "name": "ctx:name",
+                  "number": "ctx:number",
+                  "premiseType": {
+                    "@id": "ctx:premiseType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "url"
+                      }
+                    ]
+                  },
+                  "language": {
+                    "@id": "ctx:language",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "postalDeliveryPoints": {
+              "@id": "ctx:postalDeliveryPoints",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "value": "ctx:value",
+                  "shortName": "ctx:shortName",
+                  "name": "ctx:name",
+                  "number": "ctx:number",
+                  "postalDeliveryPointType": {
+                    "@id": "ctx:postalDeliveryPointType",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name",
+                        "url": "url"
+                      }
+                    ]
+                  },
+                  "language": {
+                    "@id": "ctx:language",
+                    "@context": [
+                      {
+                        "@version": 1.1
+                      },
+                      "https://www.w3.org/ns/odrl.jsonld",
+                      {
+                        "technicalKey": "ctx:technicalKey",
+                        "name": "ctx:name"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "geographicCoordinates": {
+              "@id": "ctx:geographicCoordinates",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "longitude": "ctx:longitude",
+                  "latitude": "ctx:latitude",
+                  "altitude": "ctx:altitude"
+                }
+              ]
+            },
+            "types": {
+              "@id": "ctx:types",
+              "@context": [
+                {
+                  "@version": 1.1
+                },
+                "https://www.w3.org/ns/odrl.jsonld",
+                {
+                  "technicalKey": "ctx:technicalKey",
+                  "name": "ctx:name",
+                  "url": "url"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
