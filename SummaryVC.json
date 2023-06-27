@@ -1,41 +1,26 @@
 {
-    "@context": {
-        "@version": 1.1,
-        "@protected": true,
-        "BpnCredential": {
-            "@id": "https://raw.githubusercontent.com/catenax-ng/product-core-schemas/main/businessPartnerData#BpnCredential",
-            "@context": {
-                "@version": 1.1,
-                "@protected": true,
-                "id": "@id",
-                "type": "@type",
-                "bpn": "http://schema.org/identifier"
-            }
-        }
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "summary": "https://w3id.org/2023/tractusx/credentials/summary/",
+    "id": "@id",
+    "type": "@type",
+    "SummaryCredential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1"
+      ],
+      "@id": "summary:SummaryCredential"
     },
-    "SummaryVC": {
-        "@context": {
-            "@version": 1.1,
-            "@protected": true,
-            "id": "@id",
-            "type": "@type",
-            "SummaryCredential": {
-                "@context": [
-                    "https://www.w3.org/2018/credentials/v1"
-                ],
-                "@id": "ex:SummaryCredential"
-            },
-            "holderIdentifier": {
-                "@id": "ex:bpn"
-            },
-            "items": {
-                "@id": "ex:items",
-                "@type": "https://schema.org/Text"
-            },
-            "contractTemplate": {
-                "@id": "ex:contract-template",
-                "@type": "https://schema.org/Text"
-            }
-        }
+    "holderIdentifier": {
+      "@id": "summary:holderIdentifier"
+    },
+    "items": {
+      "@id": "summary:items",
+      "@type": "https://schema.org/Text"
+    },
+    "contractTemplate": {
+      "@id": "summary:contract-template",
+      "@type": "https://schema.org/Text"
     }
+  }
 }
