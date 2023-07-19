@@ -32,6 +32,9 @@
         "status": {
           "@id": "ex:status",
           "@type": "@id"
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -73,6 +76,9 @@
               "@id": "ctx:name"
             }
           }
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -112,6 +118,9 @@
               "@id": "ctx:name"
             }
           }
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -159,6 +168,9 @@
               "@id": "ctx:url"
             }
           }
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -481,6 +493,9 @@
           }
         }
       }
+    },
+    "holderIdentifier": {
+      "@id": "ctx:holderIdentifier"
     }
   }
 }

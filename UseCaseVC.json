@@ -31,6 +31,9 @@
       "contract-version":{
         "@id": "ex:contract-version",
         "@type": "https://schema.org/Float"
+      },
+      "holderIdentifier": {
+        "@id": "ctx:holderIdentifier"
       }
     }
    } 
