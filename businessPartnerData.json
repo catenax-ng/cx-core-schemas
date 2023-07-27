@@ -31,6 +31,9 @@
         "status": {
           "@id": "ex:status",
           "@type": "https://schema.org/Text"
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -72,6 +75,9 @@
         "language": {
           "@id": "ex:language",
           "@type": "https://schema.org/object"
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -104,6 +110,9 @@
         "currency": {
           "@id": "ex:typeOf",
           "@type": "https://schema.org/object"
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -156,6 +165,9 @@
         },
         "types": {
           "@id": "ex:types"
+        },
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
         }
       }
     },
@@ -170,7 +182,10 @@
         "url": {"@id": "ex:url", "@type":"https://schema.org/Text"},
         "mainAbbreviation": {"@id": "https://schema.org/Text#4", "@type":"https://schema.org/Text"},
         "language": {"@id": "https://schema.org/Text#5", "@type":"https://schema.org/object"},
-        "categories": {"@id": "https://schema.org/Text#6", "@type":"https://schema.org/ItemList"}
+        "categories": {"@id": "https://schema.org/Text#6", "@type":"https://schema.org/ItemList"},
+        "holderIdentifier": {
+          "@id": "ctx:holderIdentifier"
+        }
       }
     }
   }
